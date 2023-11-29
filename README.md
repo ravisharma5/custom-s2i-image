@@ -197,4 +197,7 @@ Push successful
 
 #### 6 Deploy your source code using the image created earlier
 
-oc new-app app1-dev-build.
+oc new-app --name test-deploy --image-stream=custom-image-build
+
+This will deploy the code that was built earlier using the image built with the image stream.
+
